@@ -9,7 +9,7 @@
  - Plans and Goals
 
 
-## Contrubitions of Individual Memebers
+## Contrubitions of Individual Members
 
  - **Martins Fernanda Gregorini**
 
@@ -25,13 +25,16 @@
  - **Nicanor Sanderson**
 
    - Progress and Issues
-     - one 
-     - two
-     - three
+     - We discussed with Professor about capabilities we envision for our project including:
+       training TensorFlow using a large image dataset(Open Images), event logging to archive data on the detection
+       of queried objects, and a few stretch goals such as depth perception.
+     - Professor suggested we scale back our requirements and focus on a bare-bones application that is able to
+       reliably detect a few objects such as face, hands, etc, and add features to that foundation.
+     - He also gave a few critiques on our initial requirement draft to which I updated with non-functional requirements.
    - Plans and Goals
-     - planning one
-     - planning two
-     - planning 
+     - Should have roles solidified. 
+     - Rough timeline for project completion.
+     - Complete concept of tech-stack for implementation.
      
  - **Richard Paul McDowell**
 
