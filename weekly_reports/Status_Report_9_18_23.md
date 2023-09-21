@@ -49,13 +49,13 @@
  - **Richard Paul McDowell**
 
    - Progress and Issues
-     - one 
-     - two
-     - three
+     - I was searching for ways to have the camera detect shapes, like squares, circles, and triangles, of objects
+     - Got access to the git and checked minor files pushes to make sure everything worked fine with no issues for future commits
+     - I thought of ways to tone back the project, like Nate said, to make the project more basic and doable for us for the project
    - Plans and Goals
-     - planning one
-     - planning two
-     - planning 
+     - Figuring out "exactly" what we will be working on for our portion of the project
+     - Finding good assets to base our project on and how we can make it efficent
+     - Asking Nate what he would recommend for being added to our machines to make the project and the work run smoothly
 
  - **Nikolay Sizov**
 
