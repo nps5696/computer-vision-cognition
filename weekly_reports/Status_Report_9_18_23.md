@@ -23,13 +23,13 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
-     - one 
-     - two
-     - three
+     - I researched the different website tools available to start creating the front end part of the section to see the pros and cons of each website
+     - We discussed in the group what we'd possibly like to see on the website like the camera itself and logs on the website
+     - I was suggested to possibly use website tools that are already readily available then going down the route of making something from scratch
    - Plans and Goals
-     - planning one
-     - planning two
-     - planning three
+     - Ask the professor what are the best website tools and which would fit the needs we have
+     - Narrow down or select the tool to use for creating our website
+     - try to start figuring out the basics of the selected tool to have a plan of action on how to tackle the front-end portion of our project.
 
  - **Nicanor Sanderson**
 
