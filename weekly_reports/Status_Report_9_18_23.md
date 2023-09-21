@@ -12,10 +12,10 @@
    - Team members discussed and agreed on the allocation of software development responsibilities among themselves
 
  - Plans and Goals
-  - Finish local environment, IDE setup and configuration for github, copilot
-  - Start developing basic application functionality
-  - Code review
-  - Discuss further steps in development and select software communication channels such API, network, files, queue or database
+   - Finish local environment, IDE setup and configuration for github, copilot
+   - Start developing basic application functionality
+   - Code review
+   - Discuss further steps in development and select software communication channels such API, network, files, queue or database
 
 
 ## Contrubitions of Individual Members
