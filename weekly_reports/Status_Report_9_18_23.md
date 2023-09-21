@@ -2,11 +2,20 @@
 
 ## Team Report
 
- - Previous week progress 
+ - Previous week progress
+   - Last week we engaged in verbal communications to synchronize our ideas and establish project's foundations
 
  - Progress and Issues
+   - Github repository created
+   - Collaborators were added to the repository
+   - SSH Keys were generated and added to the repository for each team member access
+   - Team members discussed and agreed on the allocation of software development responsibilities among themselves
 
  - Plans and Goals
+  - Finish local environment, IDE setup and configuration for github, copilot
+  - Start developing basic application functionality
+  - Code review
+  - Discuss further steps in development and select software communication channels such API, network, files, queue or database
 
 
 ## Contrubitions of Individual Members
@@ -50,10 +59,10 @@
  - **Nikolay Sizov**
 
    - Progress and Issues
-     - one 
-     - two
-     - three
+     - I worked on researching different types of datasets and how they can be applied to our project
+     - Discussed with our team software architecture. Its major parts, data flow and communication across different parts
+     - Setup GitHub and Colab for collaborative work, ensured team members were able to access our repository
    - Plans and Goals
-     - planning one
-     - planning two
-     - planning 
+     - During this week I am planning to select a data set source and train the first model
+     - I will discuss further details about application architecture with the team to ensure we are on the same page and preliminarily agreements are still valid for everyone's technology stack
+     - I am planning to go into detail with our team about model training and backend service communication channel
