@@ -2,7 +2,7 @@
 09/15/2023
 1. Capture Frames form webcam
 2. Train Model (find dataset, run training, export model)
-3 Build part which will run model and recognize an object
+3. Build part which will run model and recognize an object
 4. Store detected events in text file/database/queue
 5. Build simple Web UI for events 
 
