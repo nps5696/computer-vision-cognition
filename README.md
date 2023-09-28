@@ -14,7 +14,7 @@
 
 - Backend will be written in python
 - Machine learning will be performed in python, using tensorflow and keras libraries 
-- Frontend will be build on React JS framwork
+- Frontend will be build on React JS framework
 
 ## Deployment Guide
 
