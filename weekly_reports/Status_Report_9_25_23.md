@@ -33,17 +33,10 @@
  - **Nicanor Sanderson**
 
    - Progress and Issues
-     - We discussed with Professor about capabilities we envision for our project including:
-       training TensorFlow using a large image dataset(Open Images), event logging to archive data on the detection
-       of queried objects, and a few stretch goals such as depth perception.
-     - Professor suggested we scale back our requirements and focus on a bare-bones application that is able to
-       reliably detect a few objects such as face, hands, etc, and add features to that foundation.
-     - He also gave a few critiques on our initial requirement draft to which I updated with non-functional requirements.
+     - I will be responsible for integrating the ML Model with the front end website.
+     - Now have an solid understanding of tech stack required to implement API to export processed frames to web
    - Plans and Goals
-     - We are currently deliberating on how we will section off tasks. 
-     - I am personally interested in developing the back end capabilities. More specifically, I would like to work on storing detected events(images)
-       into some sort of data storage system, a SQL database or possibly text file, as well as assist in the training and development of the ML model.
-     - Hope to have a complete concept of tech-stack for implementation.
+     - I plan to make a rough template of API within the next week using Flask and will wrap this application using Docker for portability.
      
  - **Richard Paul McDowell**
 
