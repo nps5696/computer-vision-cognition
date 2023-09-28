@@ -41,13 +41,12 @@
  - **Richard Paul McDowell**
 
    - Progress and Issues
-     - one 
-     - two
-     - three
+     - Went over plans for code layout in a web style format
+     - I now know more about what is desired from the end vision of the project
    - Plans and Goals
-     - planning one
-     - planning two
-     - planning 
+     - Start some sort of code
+     - Go over what is needed specificly from me at this stage to begin adding meaningful contributions
+      
 
  - **Nikolay Sizov**
 
