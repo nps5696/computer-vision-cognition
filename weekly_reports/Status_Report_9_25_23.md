@@ -22,10 +22,10 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
-     -Asked the professor what his opinion is on what the best route is to create a website, the reply was to use React which is more newbie friendly
-     -Learnt about rather then going either completely from scratch or a website tool theres an in between way to go about this
+     - Asked the professor what his opinion is on what the best route is to create a website, the reply was to use React which is more newbie friendly
+     - Learnt about rather then going either completely from scratch or a website tool theres an in between way to go about this
    - Plans and Goals
-     -I plan on learning how to use react and research more about it to try and get a plan of action to tackle the front end portion
+     - I plan on learning how to use react and research more about it to try and get a plan of action to tackle the front end portion
 
  - **Nicanor Sanderson**
 
