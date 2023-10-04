@@ -1,4 +1,4 @@
-# Status Report for the Week of 10/04/23
+# Status Report for the Week of 10/02/23
 
 ## Team Report
 
