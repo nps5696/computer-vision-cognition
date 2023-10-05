@@ -3,7 +3,7 @@
 ## Team Report
 
  - Previous week progress
-   - Team members farther dicassed application architecture and continued with basic functionality development 
+   - Team members further discussed application architecture and continued with basic functionality development 
    - Selection of languages and primary libraries finalized
    - Application communication channel discussed and agreement reached on event data sctructure
 
