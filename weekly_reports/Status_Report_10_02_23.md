@@ -35,7 +35,7 @@
      - Learning Flask functionality such as jsonify and GET/POST methods 
    - Plans and Goals
      - Should have a running code that can accept POST request and store time and event dictionary of facial recognition in coming week.
-     - Will look to push stored event to front end web server. 
+     - Will look to push stored event data to front end web server. 
      
  - **Richard Paul McDowell**
 
