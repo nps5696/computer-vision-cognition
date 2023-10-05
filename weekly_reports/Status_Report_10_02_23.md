@@ -40,11 +40,11 @@
  - **Richard Paul McDowell**
 
    - Progress and Issues
-     - Went over plans for code layout in a web style format
-     - I now know more about what is desired from the end vision of the project
+     - Researched some of the processes of facial recognition with smartphones
+     - Got an assortmant of items to have the model train with
    - Plans and Goals
-     - Start some sort of code
-     - Go over what is needed specificly from me at this stage to begin adding meaningful contributions
+     - Start to go over the utility that Nate gave
+     - Start working with Nikolay on more of the machine learning
       
 
  - **Nikolay Sizov**
