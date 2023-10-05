@@ -31,10 +31,11 @@
  - **Nicanor Sanderson**
 
    - Progress and Issues
-     - I will be responsible for integrating the ML Model with the front end website.
-     - Now have an solid understanding of tech stack required to implement API to export processed frames to web
+     - Continuing to develop Flask API template 
+     - Learning Flask functionality such as jsonify and GET/POST methods 
    - Plans and Goals
-     - I plan to make a rough template of API within the next week using Flask and will wrap this application using Docker for portability.
+     - Should have a running code that can accept POST request and store time and event dictionary of facial recognition in coming week.
+     - Will look to push stored event to front end web server. 
      
  - **Richard Paul McDowell**
 
