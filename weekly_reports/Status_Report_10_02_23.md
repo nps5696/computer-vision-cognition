@@ -23,11 +23,11 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
-     - Asked the professor what his opinion is on what the best route is to create a website, the reply was to use React which is more newbie friendly
-     - Learnt about rather then going either completely from scratch or a website tool theres an in between way to go about this
+     - Got the professor to tell me the website he used to start learning how to use react
+     - Learnt how to use react and the basics and started messing around and getting used to it
    - Plans and Goals
-     - I plan on learning how to use react and research more about it to try and get a plan of action to tackle the front end portion
-
+     - Start getting the basics down for the front end portion of the project and have something to show
+       
  - **Nicanor Sanderson**
 
    - Progress and Issues
