@@ -25,10 +25,10 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Test CLI Run
-      with:
-        context: be-flask
-        run: pwd
+   # - name: Test CLI Run
+   #   with:
+   #     context: be-flask
+   #   run: pwd
 
     - name: Build and push
       id: docker_build
