@@ -28,14 +28,14 @@ jobs:
     - name: Test CLI Run
       with:
         context: be-flask
-        run: pwd && ls -l
+        run: pwd
 
     - name: Build and push
       id: docker_build
       uses: docker/build-push-action@main
       with:
-        context: be-flask/
-        file: be-flask/Dockerfile
+        context: ./be-flask/
+        file: ./be-flask/Dockerfile
         push: true
         tags: nickage2023/psu-comp-vision:latest
 
