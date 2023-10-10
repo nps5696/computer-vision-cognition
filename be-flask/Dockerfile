@@ -1,5 +1,8 @@
-FROM ubuntu:latest
+FROM python:3.8-slim-buster
 
-COPY test.py test.py
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
-RUN python3 test.py
+COPY . .
+
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
