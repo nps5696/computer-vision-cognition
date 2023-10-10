@@ -1,5 +1,5 @@
 FROM ubuntu:latest
 
-COPY test.py /test.py
+COPY test.py test.py
 
-RUN test.py
+RUN python3 test.py
