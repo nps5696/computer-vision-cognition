@@ -58,3 +58,5 @@
      - Dataset fully prepared and loaded
      - Deep learing CNN development started   
      - Hardware with dedicated GPUs was configured for Jupyter development environment
+   - Plans and Goals
+     - Build out CNN network with few internal layers and tune hyperparameters for accuracy 
