@@ -55,4 +55,4 @@
    - Progress and Issues
      - Dataset fully prepared and loaded
      - Deep learing CNN development started   
-     - Hardware with dedicated GPUs was configured for Jupiter development environment
+     - Hardware with dedicated GPUs was configured for Jupyter development environment
