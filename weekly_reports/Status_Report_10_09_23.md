@@ -34,11 +34,12 @@
  - **Nicanor Sanderson**
 
    - Progress and Issues
-     - Continuing to develop Flask API template 
-     - Learning Flask functionality such as jsonify and GET/POST methods 
+     - Developed functionality to transfer face scan event, time of event, and event image to flask app via json payload
+     - Flask app moves an event image to physical storage 
    - Plans and Goals
-     - Should have a running code that can accept POST request and store time and event dictionary of facial recognition in coming week.
-     - Will look to push stored event data to front end web server. 
+     - Will work on containerizing code with Docker
+     - Integrate app with ML file
+     - Develop connectivity components from Flask to front-end
      
  - **Richard Paul McDowell**
 
