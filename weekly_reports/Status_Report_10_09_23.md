@@ -43,11 +43,12 @@
  - **Richard Paul McDowell**
 
    - Progress and Issues
-     - Researched some of the processes of facial recognition with smartphones
-     - Got an assortmant of items to have the model train with
+     - Tried to get access to the resource that Nate provided, but couldn't get into it
+     - Tried to get some pictures taken for the training, but got an error
    - Plans and Goals
-     - Start to go over the utility that Nate gave
-     - Start working with Nikolay on more of the machine learning
+     - Ask Nate what I did wrong with getting into the resource provided
+     - Get into the resource and start using it and getting practice with it
+     - Talk about the error that I got when I tried to get the traning pictures
       
 
  - **Nikolay Sizov**
