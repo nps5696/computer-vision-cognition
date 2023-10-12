@@ -26,10 +26,9 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
-     - Got the professor to tell me the website he used to start learning how to use react
-     - Learnt how to use react and the basics and started messing around and getting used to it
+     - Basics functionality developent for the front end portion of the project
    - Plans and Goals
-     - Start getting the basics down for the front end portion of the project and have something to show
+     - Build frontend prototype
        
  - **Nicanor Sanderson**
 
