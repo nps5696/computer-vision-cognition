@@ -28,9 +28,11 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
-     - Basics functionality developent for the front end portion of the project
+     - Researched how to combine the backend more with the front end and how it would look with the goal of this project plan
+     - Added onto the basic look of the website
    - Plans and Goals
-     - Build frontend prototype
+     -Have the website close or ready to upload to github to get feedback for further improvement
+     -Figure out how to add the more specific functionalities that our project needs for the website
        
  - **Nicanor Sanderson**
 
