@@ -34,13 +34,13 @@
        
  - **Nicanor Sanderson**
 
-   - Progress and Issues
-     - Developed functionality to transfer face scan event, time of event, and event image to flask app via json payload
-     - Flask app moves an event image to physical storage 
+  - Progress and Issues
+     - Developed front-end end point for flask api
+     - Reading Docker documentation
    - Plans and Goals
      - Will work on containerizing code with Docker
-     - Integrate app with ML file
-     - Develop connectivity components from Flask to front-end
+     - Continuing to integrate app with ML file
+     - Will begin working on api testing with Postman
      
  - **Richard Paul McDowell**
 
