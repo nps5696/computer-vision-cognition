@@ -45,12 +45,12 @@
  - **Richard Paul McDowell**
 
    - Progress and Issues
-     - Tried to get access to the resource that Nate provided, but couldn't get into it
-     - Tried to get some pictures taken for the training, but got an error
+     - Began to fix the error with the image trainer on windows
+     - Kept trying to get into the database that Nate gave me access to
    - Plans and Goals
-     - Ask Nate what I did wrong with getting into the resource provided
+     - Finish the changes to the code to make the image trainer compatable
      - Get into the resource and start using it and getting practice with it
-     - Talk about the error that I got when I tried to get the traning pictures
+
       
 
  - **Nikolay Sizov**
