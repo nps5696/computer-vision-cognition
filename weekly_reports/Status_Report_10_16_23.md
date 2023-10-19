@@ -12,7 +12,7 @@
    - Pycharm configured with pytest and pylint
    - Dataset transformation steps were added to ML notebook
    - Dataset label coordinates were normalized to allow relative coordinates with label mapping
-   - 
+  
 
  - Plans and Goals
    - Continue workin on layers development for CNN (input, convolutional, activation, ReLU)
