@@ -57,7 +57,7 @@
 
    - Progress and Issues
      - Augmentation of the dataset has been performed
-     - Number of samples in training/test/evaluation set increased from hunderes to thousands for better accuracy
-     - Continue with CNN machine learing development 
+     - Number of samples in training/test/evaluation set increased from hundreds to thousands for better accuracy
+     - Continue with CNN machine learning development 
    - Plans and Goals
      - Finish loading updated augmented dataset into ML training model
