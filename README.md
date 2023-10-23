@@ -16,6 +16,13 @@
 - Machine learning will be performed in python, using tensorflow and keras libraries 
 - Frontend will be build on React JS framework
 
+
+## Flask API
+- Serves as intermediary between TensorFlow model and front-end website
+- Retrieves face scan event image and data via post request, json payload
+- Latest event endpoint for front end retrieval 
+
 ## Deployment Guide
+
 
 - To be added here ...
