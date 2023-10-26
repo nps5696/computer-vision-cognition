@@ -28,11 +28,11 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
-     - Researched how to combine the backend more with the front end and how it would look with the goal of this project plan
-     - Added onto the basic look of the website
+     - Went a different route and researched templates to work from with react framework
    - Plans and Goals
-     - Have the website close or ready to upload to GitHub to get feedback for further improvement
-     - Figure out how to add the more specific functionalities that our project needs for the website
+     - Pick a framework to work on the website from and have it uploaded to github
+     - Ask professor some details about specific github templates and what some tags mean
+     - Ask professor what type of template look I should go for to rework
        
  - **Nicanor Sanderson**
 
