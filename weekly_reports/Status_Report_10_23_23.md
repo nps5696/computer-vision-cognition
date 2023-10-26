@@ -36,13 +36,12 @@
        
  - **Nicanor Sanderson**
 
-  - Progress and Issues
-     - Developed front-end endpoint for flask api
-     - Reading Docker documentation
+    - Progress and Issues
+     - Api has been containerized
+     - Working with Postman for api testing
    - Plans and Goals
-     - Will work on containerizing code with Docker
-     - Continuing to integrate app with ML file
-     - Will begin working on API testing with Postman
+     - Learning about CNN process for integration with API
+     - Will take webcam images to be added to dataset
      
  - **Richard Paul McDowell**
 
