@@ -3,22 +3,22 @@
 ## Team Report
 
  - Previous week progress
-   - A few backend endpoints were developed for data submission (from MLed detectors)
-   - Dataset was fully prepared and loaded into the ML notebook
-   - CNN - convolutional neural network development started - tensorflow with keras libs are being used
-
- - Progress and Issues
    - Dataset augmentation performed
    - Pycharm configured with pytest and pylint
    - Dataset transformation steps were added to ML notebook
    - Dataset label coordinates were normalized to allow relative coordinates with label mapping
+
+ - Progress and Issues
+   - ML CNN layers are writen
+   - ML and hyperparameters config in development
+   - Some python linter errors fixed
   
 
  - Plans and Goals
    - Continue working on layers development for CNN (input, convolutional, activation, ReLU)
    - Run ML (stretch goal)
    - Develop endpoint for FE data retrieval calls to BE 
-   - Fix linter warnings
+   - Continue fixing linter errors
    - Write some unit tests (midterm goal)
    - Team sync-up
 
@@ -57,8 +57,9 @@
  - **Nikolay Sizov**
 
    - Progress and Issues
-     - Augmentation of the dataset has been performed
-     - The number of samples in training/test/evaluation set increased from hundreds to thousands for better accuracy
-     - Continue with CNN machine learning development 
+     - Machine Learning model is in development, basic layers were added, work is being centered around hyperparameters tuning
+     - Refactoring is planned to separate part of the code which is not involved in actual machine learning model and on unit test addition
    - Plans and Goals
-     - Finish loading the updated augmented dataset into ML training model
+     - Add unit tests
+     - Figure out best hyperparamenters setup
+     - Possibly save tensors as files to avoid building them from images each time, this will speed up  development and remove requirement to run previous notebook steps
