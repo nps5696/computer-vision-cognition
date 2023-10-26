@@ -46,11 +46,11 @@
  - **Richard Paul McDowell**
 
    - Progress and Issues
-     - Began to fix the error with the image trainer on Windows
-     - Kept trying to get into the database that Nate gave me access to
+     - Tried to change how I run the programs on my Windows computer
+     - Didn't have much time to do work this week due to personal conflicts
    - Plans and Goals
-     - Finish the changes to the code to make the image trainer compatible
-     - Get into the resource and start using it and getting practice with it
+     - Assist Nikolay and/or Fernanda with their code where they need it
+     - Work on continuing learning how to use the resource Nate provided
 
       
 
