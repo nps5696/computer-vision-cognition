@@ -1,15 +1,6 @@
-def Add(x, y):
-    return x + y
+import pytest
+from adder import adder
 
-
-def test1():
-    assert Add(2, 3) == 5
-
-def test2():
-    assert Add(0, 0) == 0
-
-def test3():
-    assert Add(-1, 1) == 0
-
-def test4():
-    assert Add(5, 3) == 3
+def test_add():
+    assert adder(3,5)==8
+    assert adder(100,50)==150
