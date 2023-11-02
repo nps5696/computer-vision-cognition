@@ -43,11 +43,10 @@
  - **Richard Paul McDowell**
 
    - Progress and Issues
-     - Tried to change how I run the programs on my Windows computer
-     - Didn't have much time to do work this week due to personal conflicts
+     - Downloaded WSL
+     - Started making progress on Front end
    - Plans and Goals
-     - Assist Nikolay and/or Fernanda with their code where they need it
-     - Work on continuing learning how to use the resource Nate provided
+     - Continue working on the front end with Fernanda
 
       
 
