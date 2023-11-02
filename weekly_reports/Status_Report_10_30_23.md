@@ -34,7 +34,7 @@
        
  - **Nicanor Sanderson**
 
-    - Progress and Issues
+   - Progress and Issues
      - Testing flask app with Postman
      - Must install virtual box for linux environment compatibility to run face scan program
    - Plans and Goals
