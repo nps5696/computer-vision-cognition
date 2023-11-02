@@ -35,11 +35,10 @@
  - **Nicanor Sanderson**
 
     - Progress and Issues
-     - Api has been containerized
-     - Working with Postman for api testing
+     - Testing flask app with Postman
+     - Must install virtual box for linux environment compatibility to run face scan program
    - Plans and Goals
-     - Learning about CNN process for integration with API
-     - Will take webcam images to be added to dataset
+     - Plan to assist in front-end development and set up api connectivity
      
  - **Richard Paul McDowell**
 
