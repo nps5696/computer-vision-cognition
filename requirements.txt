@@ -1,0 +1,7 @@
+legacy-resolver
+tflite-model-maker
+pycocotools
+opencv-python-headless==4.1.2.30
+tensorflow==2.8.0
+Werkzeug==2.2.2
+

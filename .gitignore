@@ -1,2 +1,5 @@
 venv
 notebooks/colab_images/
+.idea
+be-flask/__pycache__/
+notebooks/.ipynb_checkpoints/
