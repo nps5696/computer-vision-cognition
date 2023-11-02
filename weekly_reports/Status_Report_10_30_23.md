@@ -26,11 +26,10 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
-     - Went a different route and researched templates to work from with react framework
+     -Got the bones of the frontend website up on react and ready to add in other features like camera, log for date and time, etc.
+     -Had issues having react work on vscode on pc since went from using my laptop to my pc
    - Plans and Goals
-     - Pick a framework to work on the website from and have it uploaded to github
-     - Ask professor some details about specific github templates and what some tags mean
-     - Ask professor what type of template look I should go for to rework
+     - Add onto the front end whether it be pages to click onto FAQ and credits page on website or camera/log on the website
        
  - **Nicanor Sanderson**
 
