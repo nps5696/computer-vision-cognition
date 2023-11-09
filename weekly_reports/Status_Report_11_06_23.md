@@ -43,10 +43,11 @@
  - **Richard Paul McDowell**
 
    - Progress and Issues
-     - Downloaded WSL
-     - Started making progress on Front end
+     - Downloaded the necessary applications for the front end to run
+     - With the front end work in front of me started to play around and come up with ways to progress the webpage
    - Plans and Goals
-     - Continue working on the front end with Fernanda
+     - Push changes to the webpage
+     - Add a basic UI for now
 
       
 
