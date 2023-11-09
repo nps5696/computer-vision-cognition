@@ -1,24 +1,22 @@
-# Status Report for the Week of 10/30/23
+# Status Report for the Week of 11/06/23
 
 ## Team Report
 
  - Previous week progress
-   - ML CNN layers are writen
-   - ML and hyperparameters config in development
-   - Some python linter errors fixed
-
- - Progress and Issues
    - Machine Learning Model Developed
    - Trained model deployed and fed with camera frames
    - Model hyperparameter tuning started
+
+ - Progress and Issues
+   - Added functionality for trained model face detection events submission to backend service
+   - Adam optimizer issue fixed
+   - Model retrained with much better accuracy 
   
 
  - Plans and Goals
-   - Add functionality to the running face recognintion application to post data to backend API 
-   - Tune hyperparameters on ML model
-   - Configure Docker image for face detection application
-   - Plant out deployment process
-   - Team sync-up
+   - Dokerize each components(FE, BE, ML-BE) into images
+   - Configure GitHub Actions to build and upload images to DockerHub
+   - Prepare deployment How-To, verify the procedure, deploy images(try utilizing GitHub Actions) to AWS EC2, test functionality
 
 
 ## Contributions of Individual Members
@@ -54,9 +52,9 @@
  - **Nikolay Sizov**
 
    - Progress and Issues
-     - Machine Learning model developed
-     - ML model trained
+     - Adam optimizer fixed for the machine learning model, regression accuracy inceased (error rate ~9 to ~0.3)
+     - Functionaluty developed for ML model - frame scanning application communication with backend service
+     - Face tracking app testing with backend app together, able to detect, submit and retrieve events 
    - Plans and Goals
-     - ML model tuning
+     - Dockerize applications, make dockerfiles, push to dockerhub image registry from GitHub Actions
      - Package model into docker image
-     - Confugire/Test cross service communication 
