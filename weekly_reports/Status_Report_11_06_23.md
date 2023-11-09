@@ -24,9 +24,11 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
+   - 
      -got more information on how the front end ideally should look like with what the back end is going
      -figured out other tools to use to expand the bones of the front enddata
    - Plans and Goals
+   - 
      -finish off the front end with the help of the back end
      -bug fix any issues of exportation that we're having with react app
        
