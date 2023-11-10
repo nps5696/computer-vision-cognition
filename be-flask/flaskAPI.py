@@ -10,7 +10,7 @@ event_data = []
 @app.route('/')
 def home():
     print("HOME!")
-
+ 
 #ML file endpoint to push successful scan data
 @app.route('/add_event', methods=['POST'])
 def add_event():
