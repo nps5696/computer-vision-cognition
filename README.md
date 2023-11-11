@@ -20,7 +20,12 @@
 ## Flask API
 - Serves as intermediary between TensorFlow model and front-end website
 - Retrieves face scan event image and data via post request, json payload
-- Latest event endpoint for front end retrieval 
+- Latest event endpoint for front end retrieval
+
+## Front-End
+- Uses react via node.js and npm
+- fetches event data list from flask api for web-server output
+- button functionality to switch between event data that has been posted
 
 ## Deployment Guide
 

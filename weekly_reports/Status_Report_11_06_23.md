@@ -8,13 +8,14 @@
    - Model hyperparameter tuning started
 
  - Progress and Issues
+   - Backend and Frontend functionality tested and verified as working as expected 
    - Added functionality for trained model face detection events submission to backend service
    - Adam optimizer issue fixed
    - Model retrained with much better accuracy 
   
 
  - Plans and Goals
-   - Dokerize each components(FE, BE, ML-BE) into images
+   - Dokerize each component(FE, BE, ML-BE) into images
    - Configure GitHub Actions to build and upload images to DockerHub
    - Prepare deployment How-To, verify the procedure, deploy images(try utilizing GitHub Actions) to AWS EC2, test functionality
 
@@ -24,10 +25,11 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
-     -Got the bones of the frontend website up on react and ready to add in other features like camera, log for date and time, etc.
-     -Had issues having react work on vscode on pc since went from using my laptop to my pc
+     - got more information on how the front end ideally should look like with what the back end is going
+     - figured out other tools to use to expand the bones of the front enddata
    - Plans and Goals
-     - Add onto the front end whether it be pages to click onto FAQ and credits page on website or camera/log on the website
+     - finish off the front end with the help of the back end
+     -bug fix any issues of exportation that we're having with react app
        
  - **Nicanor Sanderson**
 
