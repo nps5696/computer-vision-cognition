@@ -42,11 +42,11 @@
  - **Richard Paul McDowell**
 
    - Progress and Issues
-     - Downloaded the necessary applications for the front end to run
-     - With the front end work in front of me started to play around and come up with ways to progress the webpage
+     - Continued to tinker with the UI to make it more accessable
+     - Worked on Alpha Release
    - Plans and Goals
-     - Push changes to the webpage
-     - Add a basic UI for now
+     - Finish up the UI for the webpage
+     - Submit the Alpha with no bugs
 
       
 
