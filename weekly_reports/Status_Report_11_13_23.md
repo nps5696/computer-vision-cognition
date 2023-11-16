@@ -25,12 +25,11 @@
  - **Martins Fernanda Gregorini**
 
    - Progress and Issues
-     - got more information on how the front end ideally should look like with what the back end is going
-     - figured out other tools to use to expand the bones of the front enddata
+     - learned techniques to adjust react front-end for visual improvement
    - Plans and Goals
-     - finish off the front end with the help of the back end
-     -bug fix any issues of exportation that we're having with react app
-       
+     - Will work with app.css file
+ 
+ 
  - **Nicanor Sanderson**
 
    - Progress and Issues
@@ -49,13 +48,15 @@
      - Submit the Alpha with no bugs
 
       
-
  - **Nikolay Sizov**
 
    - Progress and Issues
-     - Adam optimizer fixed for the machine learning model, regression accuracy inceased (error rate ~9 to ~0.3)
-     - Functionaluty developed for ML model - frame scanning application communication with backend service
-     - Face tracking app testing with backend app together, able to detect, submit and retrieve events 
+     - Face scanner app running successfully with flask and front-end 
+     - Will work further on model tuning
    - Plans and Goals
-     - Dockerize applications, make dockerfiles, push to dockerhub image registry from GitHub Actions
-     - Package model into docker image
+     - Debug docker workflow build
+
+
+    
+
+
