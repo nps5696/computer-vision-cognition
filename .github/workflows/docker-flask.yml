@@ -29,11 +29,6 @@ jobs:
    #   with:
    #     context: be-flask
    #   run: pwd
-    - name: Set working directory
-      run: cd ./be-flask/build/ 
-
-    - name: LS 
-      run: ls -ls 
       
     - name: Build and push
       id: docker_build
