@@ -30,13 +30,21 @@ jobs:
    #     context: be-flask
    #   run: pwd
       
-    - name: Build and push
-      id: docker_build
+    - name: Build and Push Flask Backend 
+      id: docker_build_fbe
       uses: docker/build-push-action@v2
       with:
         context: .
         file: ./be-flask/build/Dockerfile
         push: true
-        tags: nickage2023/psu-comp-vision:latest
+        tags: nickage2023/psu-cv-fbe:latest
 
+    - name: Build and Push React Frontend
+      id: docker_build_rfe
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        file: ./front-end/Dockerfile
+        push: true
+        tags: nickage2023/psu-cv-rfe:latest
 
