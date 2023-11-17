@@ -7,6 +7,6 @@ WORKDIR /flask-api
 COPY requirements.txt .
 COPY ../../ .
 
-RUN pip install -r requirements.txt
+#RUN pip install -r requirements.txt
 
 CMD ["python","runFiles.py"]
