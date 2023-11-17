@@ -40,7 +40,7 @@ This command will bring up flask backend which is responsible for passing event 
 ### Start React Frontend
 - Package is built as docker image, to run image:
 ```
-docker run -it -p 3000:3000 nickage2023/psu-cv-fbe 
+docker run -it -p 3000:3000 nickage2023/psu-cv-rfe 
 ```
 
 ### Start Frame Recieving Model Backend
