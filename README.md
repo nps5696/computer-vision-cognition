@@ -33,14 +33,14 @@
 ### Start Flask Backend
 - Package is built as docker image, to run image:
 ```
-docker run -it -p 5000:5000 nickage2023/psu-cv-fbe 
+docker run -p 5000:5000 nickage2023/psu-cv-fbe 
 ```
 This command will bring up flask backend which is responsible for passing event data to frontend. 
 
 ### Start React Frontend
 - Package is built as docker image, to run image:
 ```
-docker run -it -p 3000:3000 nickage2023/psu-cv-rfe 
+docker run -p 3000:3000 nickage2023/psu-cv-rfe 
 ```
 
 ### Start Frame Recieving Model Backend
