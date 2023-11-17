@@ -29,6 +29,17 @@
 
 ## Deployment Guide
 
+### Docker Installation
+ # Windows
+ - Ensure you have Windows 10 or later and virtualization is enabled in BIOS (usually default)
+ - Perform a windows search and type powershell, run as administrator.
+ - Within powershell type wsl --install to download Windows Subsystem for Linux 2. This will allow you to run Docker which is native to Linux. Look [here](https://learn.microsoft.com/en-us/windows/wsl/install) for additional support
+ - Download docker desktop [here](https://www.docker.com/products/docker-desktop/) and create an account.
+ - Follow deployment steps below in powershell.
+
+# Linux/Mac
+ - Download docker desktop [here](https://www.docker.com/products/docker-desktop/) and create an account.
+ - Follow deployment steps below in bash(Linux) or Z shell(MacOS).
 
 ### Start Flask Backend
 - Package is built as docker image, to run image:
