@@ -59,7 +59,7 @@ cap = cv2.VideoCapture('rtsp://webcam_login:webcan_password@webcam_IP_address:55
 to start facetracker app run commands:
 ```
 git clone git@github.com:nps5696/computer-vision-cognition.git
-cd facetracker
+cd computer-vision-cognition/facetracker
 pip3 install -r requirements.txt
 python3 facetracker.py 
 ```
