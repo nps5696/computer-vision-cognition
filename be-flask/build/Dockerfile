@@ -11,4 +11,4 @@ RUN pip install Flask requests flask-cors
 
 #RUN pip install -r requirements.txt
 
-CMD ["python","runFiles.py"]
+CMD ["python","flaskAPI.py"]
