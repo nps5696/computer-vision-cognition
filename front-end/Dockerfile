@@ -5,14 +5,14 @@ FROM node:20.9.0
 WORKDIR /front-end
 
 
-COPY package*.json ./
+COPY ./front-end/package*.json ./
 
 RUN ls -ls
 
 RUN npm install
 
 
-COPY . .
+COPY ./front-end/. .
 
 
 EXPOSE 3000
