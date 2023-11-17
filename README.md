@@ -64,4 +64,4 @@ pip3 install -r requirements.txt
 python3 facetracker.py 
 ```
 
-If everything goes well you will see new windows titled 'Facetracker' and face detection events will be submitted to backand and will appear in your frontend browser tab (default http://localhost:3000) 
+If everything goes well you will see new window titled 'Facetracker' with webcame frames, and face detection events will be submitted to backend and will appear in your frontend browser tab (default http://localhost:3000) 
