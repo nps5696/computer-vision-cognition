@@ -1,5 +1,7 @@
 FROM python:3.9
 
+EXPOSE 5000
+
 WORKDIR /flask-api
 
 COPY requirements.txt .
