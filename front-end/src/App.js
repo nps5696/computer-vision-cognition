@@ -6,7 +6,7 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/get_event_data')
+    fetch('http://172.17.0.1:5000/get_event_data') // 172.7.0.1 localhost for docker proxy interface 
       .then((response) => response.json())
       .then((data) => {
         setEvents(data);
