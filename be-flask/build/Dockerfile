@@ -5,8 +5,8 @@ EXPOSE 5000
 WORKDIR /flask-api
 
 COPY requirements.txt .
-#COPY /be-flask .
+COPY ../../ .
 
-#RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 CMD ["python","runFiles.py"]
