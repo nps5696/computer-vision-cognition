@@ -5,7 +5,7 @@ EXPOSE 5000
 WORKDIR /flask-api
 
 COPY requirements.txt .
-COPY ../../*.py .
+COPY /be-flask/* .
 
 RUN pip install Flask requests flask-cors
 
