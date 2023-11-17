@@ -29,7 +29,6 @@
 
 ## Deployment Guide
 
-Fron 
 
 ### Start Flask Backend
 - Package is built as docker image, to run image:
