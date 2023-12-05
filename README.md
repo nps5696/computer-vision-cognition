@@ -64,7 +64,7 @@ cap = cv2.VideoCapture(1)
 
 or you can connect to RSTP sream(check your webcam settings for stream and port numbers):
 ```
-cap = cv2.VideoCapture('rtsp://webcam_login:webcan_password@webcam_IP_address:554/stream1')
+cap = cv2.VideoCapture('rtsp://webcam_login:webcam_password@webcam_IP_address:554/stream1')
 ```
 
 to start facetracker app run commands:
