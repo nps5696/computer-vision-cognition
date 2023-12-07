@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - facetracker-docker
 
 jobs:
   build:
