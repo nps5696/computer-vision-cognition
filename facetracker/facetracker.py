@@ -1,3 +1,4 @@
+import os
 import tensorflow as tf
 # import json
 import numpy as np
@@ -12,6 +13,12 @@ import base64
 import requests
 import time
 import threading
+
+
+rtsp_username = os.environ.get("RTSP_USERNAME")
+rtsp_password = os.environ.get("RTSP_PASSWORD")
+rtsp_server_address = os.environ.get("RTSP_SERVER_ADDRESS")
+os.environ['DISPLAY'] = ':99'
 
 
 def rate_limited(max_per_minute):
@@ -49,7 +56,7 @@ def submit_frame(frame):
     }
 
     # Send the POST request to the API
-    response = requests.post('http://localhost:5000/add_event', json=data)
+    response = requests.post('http://172.17.0.1:5000/add_event', json=data)
 
     # Check the response
     if response.status_code == 200:
@@ -70,8 +77,10 @@ def submit_frame_threaded(frame):
 
 
 stop_event = threading.Event()
-facetracker = load_model('../notebooks/model/facetracker_reg.h5')
-cap = cv2.VideoCapture(1)
+facetracker = load_model('facetracker_model.h5')
+rtsp_url = f"rtsp://{rtsp_username}:{rtsp_password}@{rtsp_server_address}/stream1"
+cap = cv2.VideoCapture(rtsp_url)
+#cap = cv2.VideoCapture(1)
 
 while cap.isOpened():
     _, frame = cap.read()
@@ -124,10 +133,10 @@ while cap.isOpened():
         face_detected = False
         print("face not detected:", face_detected)
 
-    cv2.imshow('FaceTrack', frame)
-    
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        stop_event.set()
-        break
+    # cv2.imshow('FaceTrack', frame)
+    #
+    # if cv2.waitKey(1) & 0xFF == ord('q'):
+    #     stop_event.set()
+    #     break
 cap.release()
 cv2.destroyAllWindows()

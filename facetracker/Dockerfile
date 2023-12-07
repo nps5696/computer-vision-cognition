@@ -1,6 +1,4 @@
-FROM ubuntu:22.04
-#FROM continuumio/anaconda
-FROM jjanzic/docker-python3-opencv 
+FROM jjanzic/docker-python3-opencv
 
 # set creds to rtsp stream 
 ENV RTSP_USERNAME=RTSP_USER_NAME
@@ -25,14 +23,10 @@ ENV RTSP_SERVER_ADDRESS=RTSP_IP
 WORKDIR /app
 
 # Copy the requirements.txt file into the container
-COPY requirements.txt .
+COPY facetracker.py facetracker_model.h5 requirements.txt ./
 
 # Install any Python dependencies from requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy your application code into the container
-COPY facetracker.py facetracker_model.h5 .
-
 # Specify the command to run when the container starts
-CMD ["python", "facetracker.py"]
-#CMD ["Xvfb", ":99", "-screen", "0", "1024x768x16"]
+CMD ["python3", "facetracker.py"]
