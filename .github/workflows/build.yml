@@ -64,12 +64,15 @@ jobs:
         username: ${{ secrets.AWS_EC2_USERNAME }}
         key: ${{ secrets.AWS_EC2_PRIVATE_KEY }}
         script: |
-          sudo docker stop psu-cv-ftr:latest || true
-          sudo docker stop psu-cv-fbe:latest || true
-          sudo docker stop psu-cv-rfe:latest || true
-          sudo docker rm psu-cv-ftr:latest || true
-          sudo docker rm psu-cv-fbe:latest || true
-          sudo docker rm psu-cv-rfe:latest || true
+          sudo docker stop psu-cv-ftr || true
+          sudo docker stop psu-cv-fbe || true
+          sudo docker stop psu-cv-rfe || true
+          sudo docker rm -f psu-cv-ftr || true
+          sudo docker rm -f psu-cv-fbe || true
+          sudo docker rm -f psu-cv-rfe || true
+          sudo docker rmi -f psu-cv-ftr:latest || true
+          sudo docker rmi -f psu-cv-fbe:latest || true
+          sudo docker rmi -f psu-cv-rfe:latest || true
           sudo docker pull nickage2023/psu-cv-rfe:latest
           sudo docker pull nickage2023/psu-cv-fbe:latest
           sudo docker pull nickage2023/psu-cv-ftr:latest
