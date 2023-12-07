@@ -23,7 +23,7 @@ ENV RTSP_SERVER_ADDRESS=RTSP_IP
 WORKDIR /app
 
 # Copy the requirements.txt file into the container
-COPY facetracker.py facetracker_model.h5 requirements.txt ./
+COPY facetracker/facetracker.py facetracker/facetracker_model.h5 facetracker/requirements.txt ./
 
 # Install any Python dependencies from requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
