@@ -18,8 +18,9 @@ const HomePage = () => {
   //     .catch((error) => console.error('Error fetching event data:', error));
   // }, []);
 
-  const apiHost = process.env.BACKEND_API_URL || 'localhost';
+  const apiHost = process.env.REACT_APP_API_HOST || 'localhost';
 
+  console.log(process.env);
 
   useEffect(() => {
   fetch(`http://${apiHost}:5000/get_event_data`)
