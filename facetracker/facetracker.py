@@ -38,7 +38,7 @@ def rate_limited(max_per_minute):
 
 # rate limiter
 @rate_limited(max_per_minute=10)
-def submit_frame(frame, backend_host):
+def submit_frame(frame, backend_host, event):
     # Assuming `frame` is your image
     _, buffer = cv2.imencode('.jpg', frame)
 
@@ -48,7 +48,7 @@ def submit_frame(frame, backend_host):
     current_time = datetime.now().isoformat()  # Current date and time in ISO format
     data = {
         'time': current_time,
-        'event': 'Face Detected',  # Example event
+        'event': event,  # Example event
         'image': encoded_image  # The base64 encoded image
     }
 
@@ -62,10 +62,10 @@ def submit_frame(frame, backend_host):
         print('Failed to add event:', response.text)
 
 
-def submit_frame_threaded(frame, backend_host):
+def submit_frame_threaded(frame, backend_host, event):
     if not stop_event.is_set():
         # Start a new thread for the submit_frame function
-        thread = threading.Thread(target=submit_frame, args=(frame, backend_host))
+        thread = threading.Thread(target=submit_frame, args=(frame, backend_host, event))
         thread.start()
 
         # for thread in threading.enumerate():
@@ -90,10 +90,13 @@ print("rtsp_url:", rtsp_url)
 cap = cv2.VideoCapture(rtsp_url)
 #cap = cv2.VideoCapture(1)
 
+face_state_changed = False
+face_detected = False
+
 while cap.isOpened():
     _, frame = cap.read()
     #frame = frame[50:500, 50:500,:]
-
+    prev_face_detected = face_detected
     frame = cv2.resize(frame, (1920, 1080))
 
     rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -106,11 +109,19 @@ while cap.isOpened():
 
         # changing state since face is detected make call to BE API submit picture and time
         face_detected = True
+        if face_detected is not prev_face_detected:
+            face_state_changed = True
+        else:
+            face_state_changed = False
         print("face_detected:", face_detected)
+
+        event = 'Face Detected'
 
         ### API call to BE
         #submit_frame(frame)
-        submit_frame_threaded(frame, backend_host)
+        if face_state_changed:
+            submit_frame_threaded(frame, backend_host, event)
+            face_state_changed = False
 
         #print("yhat[1][0]:",yhat[1][0])
         x_scale = frame.shape[1] - 1
@@ -137,9 +148,30 @@ while cap.isOpened():
         text_pos = tuple(np.add(start_point, [0, -5]))
         cv2.putText(frame, 'face area', text_pos, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2, cv2.LINE_AA)
 
+        # slow down capture
+        time.sleep(5)
+
     else:
         face_detected = False
+
+        event = "'Face Not Detected'"
+
+        if face_detected is not prev_face_detected:
+            face_state_changed = True
+        else:
+            face_state_changed = False
+        print("face_detected:", face_detected)
+
+        ### API call to BE
+        #submit_frame(frame)
+        if face_state_changed:
+            submit_frame_threaded(frame, backend_host, event)
+            face_state_changed = False
+
+
         print("face not detected:", face_detected)
+        time.sleep(5)
+
 
     # cv2.imshow('FaceTrack', frame)
     #
