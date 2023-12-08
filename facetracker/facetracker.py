@@ -15,11 +15,7 @@ import time
 import threading
 
 
-rtsp_username = os.environ.get("RTSP_USERNAME")
-rtsp_password = os.environ.get("RTSP_PASSWORD")
-rtsp_server_address = os.environ.get("RTSP_SERVER_ADDRESS")
 os.environ['DISPLAY'] = ':99'
-
 
 def rate_limited(max_per_minute):
     min_interval = 60.0 / float(max_per_minute)
@@ -78,7 +74,17 @@ def submit_frame_threaded(frame):
 
 stop_event = threading.Event()
 facetracker = load_model('facetracker_model.h5')
-rtsp_url = f"rtsp://{rtsp_username}:{rtsp_password}@{rtsp_server_address}/stream1"
+
+if "RTSP_SERVER_ADDRESS" in os.environ:
+    # if rstp address is set => connect to external stream
+    rtsp_username = os.environ.get("RTSP_USERNAME")
+    rtsp_password = os.environ.get("RTSP_PASSWORD")
+    rtsp_server_address = os.environ.get("RTSP_SERVER_ADDRESS")
+    rtsp_url = f"rtsp://{rtsp_username}:{rtsp_password}@{rtsp_server_address}/stream1"
+else:
+    # otherwise we should expect INT_CAMERA_INDEX as env var on docker
+    rtsp_url = os.environ.get("INT_CAMERA_INDEX")
+
 cap = cv2.VideoCapture(rtsp_url)
 #cap = cv2.VideoCapture(1)
 
