@@ -18,8 +18,11 @@ const HomePage = () => {
   //     .catch((error) => console.error('Error fetching event data:', error));
   // }, []);
 
+  const apiHost = process.env.BACKEND_API_URL || 'localhost';
+
+
   useEffect(() => {
-  fetch('http://127.0.0.1:5000/get_event_data')
+  fetch(`http://${apiHost}:5000/get_event_data`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -66,7 +69,7 @@ const HomePage = () => {
       <h2>Event Data</h2>
       <p>Event Time: {currentEvent.time}</p>
       <p>Event: {currentEvent.event}</p>
-      <img src={imageSrc} alt="Event" />
+      <img src={imageSrc} alt="Event" style={{ maxWidth: '50vw', maxHeight: '50vh' }} />
       <div>
         <button onClick={goToPreviousEvent} disabled={currentIndex === 0}>
           Previous
