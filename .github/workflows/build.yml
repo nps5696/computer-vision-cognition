@@ -76,8 +76,8 @@ jobs:
           sudo docker pull nickage2023/psu-cv-rfe:latest
           sudo docker pull nickage2023/psu-cv-fbe:latest
           sudo docker pull nickage2023/psu-cv-ftr:latest
-          sudo docker run -d --name psu-cv-rfe -p 80:3000 nickage2023/psu-cv-rfe:latest
-          sudo docker run -d --name psu-cv-fbe -p 5000:5000 nickage2023/psu-cv-fbe:latest
+          sudo docker run -d --name psu-cv-rfe --network="host" -p 80:3000 nickage2023/psu-cv-rfe:latest
+          sudo docker run -d --name psu-cv-fbe --network="host" -p 5000:5000 nickage2023/psu-cv-fbe:latest
           sudo docker run -d --name psu-cv-ftr \
                         -e RTSP_SERVER_ADDRESS="${{ secrets.CV_WEBCAM_HOST }}" \
                         -e RTSP_PASSWORD="${{ secrets.CV_WEBCAM_PASSWORD }}" \

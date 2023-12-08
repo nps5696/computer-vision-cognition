@@ -16,6 +16,7 @@ import threading
 
 
 os.environ['DISPLAY'] = ':99'
+backend_host = os.environ.get('BACKEND_HOST', 'localhost') #os.environ['BACKEND_HOST']
 
 def rate_limited(max_per_minute):
     min_interval = 60.0 / float(max_per_minute)
@@ -37,7 +38,7 @@ def rate_limited(max_per_minute):
 
 # rate limiter
 @rate_limited(max_per_minute=10)
-def submit_frame(frame):
+def submit_frame(frame, backend_host):
     # Assuming `frame` is your image
     _, buffer = cv2.imencode('.jpg', frame)
 
@@ -52,7 +53,7 @@ def submit_frame(frame):
     }
 
     # Send the POST request to the API
-    response = requests.post('http://172.17.0.1:5000/add_event', json=data)
+    response = requests.post('http://' + backend_host + ':5000/add_event', json=data)
 
     # Check the response
     if response.status_code == 200:
@@ -61,10 +62,10 @@ def submit_frame(frame):
         print('Failed to add event:', response.text)
 
 
-def submit_frame_threaded(frame):
+def submit_frame_threaded(frame, backend_host):
     if not stop_event.is_set():
         # Start a new thread for the submit_frame function
-        thread = threading.Thread(target=submit_frame, args=(frame,))
+        thread = threading.Thread(target=submit_frame, args=(frame, backend_host))
         thread.start()
 
         # for thread in threading.enumerate():
@@ -75,16 +76,17 @@ def submit_frame_threaded(frame):
 stop_event = threading.Event()
 facetracker = load_model('facetracker_model.h5')
 
-if "RTSP_SERVER_ADDRESS" in os.environ:
+if "INT_CAMERA_INDEX" in os.environ:
+    # we should expect INT_CAMERA_INDEX as env var on docker
+    rtsp_url = int(os.environ.get("INT_CAMERA_INDEX"))
+else:
     # if rstp address is set => connect to external stream
     rtsp_username = os.environ.get("RTSP_USERNAME")
     rtsp_password = os.environ.get("RTSP_PASSWORD")
     rtsp_server_address = os.environ.get("RTSP_SERVER_ADDRESS")
     rtsp_url = f"rtsp://{rtsp_username}:{rtsp_password}@{rtsp_server_address}/stream1"
-else:
-    # otherwise we should expect INT_CAMERA_INDEX as env var on docker
-    rtsp_url = os.environ.get("INT_CAMERA_INDEX")
 
+print("rtsp_url:", rtsp_url)
 cap = cv2.VideoCapture(rtsp_url)
 #cap = cv2.VideoCapture(1)
 
@@ -108,7 +110,7 @@ while cap.isOpened():
 
         ### API call to BE
         #submit_frame(frame)
-        submit_frame_threaded(frame)
+        submit_frame_threaded(frame, backend_host)
 
         #print("yhat[1][0]:",yhat[1][0])
         x_scale = frame.shape[1] - 1
@@ -145,4 +147,4 @@ while cap.isOpened():
     #     stop_event.set()
     #     break
 cap.release()
-cv2.destroyAllWindows()
+#cv2.destroyAllWindows()

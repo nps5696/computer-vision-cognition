@@ -1,9 +1,9 @@
 FROM jjanzic/docker-python3-opencv
 
 # set creds to rtsp stream 
-ENV RTSP_USERNAME=RTSP_USER_NAME
-ENV RTSP_PASSWORD=RTSP_PASSWORD
-ENV RTSP_SERVER_ADDRESS=RTSP_IP
+#ENV RTSP_USERNAME=RTSP_USER_NAME
+#ENV RTSP_PASSWORD=RTSP_PASSWORD
+#ENV RTSP_SERVER_ADDRESS=RTSP_IP
 #ENV DISPLAY=:99
 
 # Update the package list and install essential packages
