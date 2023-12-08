@@ -7,7 +7,7 @@ WORKDIR /flask-api
 COPY requirements.txt .
 COPY /be-flask/* .
 
-RUN pip install Flask requests flask-cors
+RUN pip install Flask requests flask-cors Pillow==10.0.1
 
 #RUN pip install -r requirements.txt
 
